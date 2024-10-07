@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(230, 230, 253);
+
+}
+
+.nav_bar {
+    display: flex;
+}
+
+.logot img{
+    padding-left: 3px;
+    height: 56px;
+}
+
+.nav_bar2 {
+    display: flex;
+    /*кнопки в один ряд*/
+}
+
+.nav_bar2 a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    text-decoration: none;
+}
+
+
+.nav_bar2 a:hover {
+    background-color: #00505e;
+    color: white;
+
+}
+
+.my_head {
+    display: block;
+    height: 59em;
+    text-align: center;
+    background-image: url(img/uslugi.jpg);
+    background-size: cover;
+}
+
+.my_head img {
+    width: 100%;
+    height: auto;
+}
+
+.namepp {
+    padding-top: 2%;
+}
+
+.namepp img{
+    width: 300px;
+    border-radius: 50%;
+}
+
+.namepp2 {
+    padding: 1%;
+}
+
+.my_head>.namepp>p {
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 7em;
+    color: rgb(0, 0, 0);
+}
+
+.namepp2>p {
+    margin-top: 1%;
+    top: 20%;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/*-------second------------*/
+
+.second {
+    padding: 5%;
+    background-color: white;
+    height: 100%;
+}
+
+.second>p {
+    margin: 1em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.list-uslugi .uslugi>img {
+    width: 50%;
+}
+
+.list-uslugi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+/*выпадающий список*/
+
+.uslugi1 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 2em;
+    height: 300px;
+    background-image: url(img/bb_60be631be823a.jpg);
+    background-size: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.uslugi2 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 2em;
+    height: 300px;
+    background-image: url(img/bb_60be631be823a.jpg);
+    background-size: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.uslugi3 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 2em;
+    height: 300px;
+    background-image: url(img/bb_60be631be823a.jpg);
+    background-size: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.uslugi4 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 2em;
+    height: 300px;
+    background-image: url(img/bb_60be631be823a.jpg);
+    background-size: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+
+.hov-list {
+    background-color: #d4ccfd;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: auto;
+    min-width: 60%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+
+    background-color: #00788d;
+    color: white;
+}
+
+.hov-list:hover {
+    background-color: #00788d;
+    color: white;
+}
+
+/* короче над для того что б не на бблок наводится а на кнопку и что б список остался*/
+.hov-list:hover+.dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+/* 3 часть*/
+
+.third {
+    padding: 100px;
+    height: 100%;
+
+}
+
+.tehinvent {
+    border: solid red;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.tehinvent>p {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.teh-invent-list {
+    padding-top: 50px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.teh-invent-list>p {
+    text-align: center;
+}
+
+/* четвертый*/
+
+.four {
+    margin: 3%;
+}
+
+.price>p {
+    margin: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+}
+
+/* Чередование цветов (зебра) */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* Светлый фон для нечетных строк */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* Белый фон для четных строк */
+}
+
+/* five */
+
+.five {
+    padding-left: 5%;
+    display: grid;
+    background-color: white;
+}
+
+.five>p{
+    margin-top: 3%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sert img{
+    margin: 1%;
+    width: 20%;
+}
+
+/*six*/
+
+.six{
+    width: 90%;
+    display: grid;
+    justify-items: left;
+    align-items: left;
+    margin: 1%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact {
+    margin: 20px;
+}
+
+.contact>p{
+    margin: 5px;
+}
+
+.graf {
+    text-align: left;
+    padding: 25px;
+}
+
+.phone {
+    margin: 20px;
+}
+
+footer {
+    background-color: #00505e;
+    padding: 1em;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
